@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial on js</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            border: 2px solid red;
+            padding: 9px;
+            margin: 3px 0;
+            background: cyan;
+        }
+
+        bg-primary {
+            background-color: blue;
+        }
+
+        text-success {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my js Tutorial</h1>
+    <div class="container" id="firstcontainer">
+        <!-- <button id="btn">click Me</button> -->
+        <button oncontextmenu="rightClickHandler()">click Me</button>
+        <p>this is the paragraph of me</p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+
+    <form id="formData">
+        <label for="text">Name: </label>
+        <input type="text" name="username">
+    </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+<!-- DOM -->
+<script>
+    // contextmenu event
+    // $('#btn').contextmenu(function() {
+    //     console.log('right clicked');
+    // });
+
+    // Another way to handle event
+    function rightClickHandler() {
+        console.log('right clicked');
+    }
+
+    // submit event on form
+    // function getData(e) {
+    //     e.preventDefault();
+    //     // window.eventHum = e;
+    //     console.log(e.target.elements.username.value);
+    // }
+
+    $('#formData').submit(function(event) { // support more than previous approach
+        event.preventDefault();
+        console.log(event.target.elements.username.value);
+    });
+</script>
+
+</html>

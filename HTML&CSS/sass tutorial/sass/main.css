@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+    Advantages of sass/scss
+    1) we can use operator
+    2) we can use variables like php syntax
+    3) nesting
+    4) Mixin and parameters
+    5) partials
+*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #10ac84;
+}
+
+.header h1 {
+  color: red;
+  font-size: 10rem;
+}
+
+.header h1:hover {
+  color: blue;
+}
+
+.header p {
+  color: aquamarine;
+  font-size: 5rem;
+}
+
+.header p:hover {
+  color: #0d303b;
+}
+/*# sourceMappingURL=main.css.map */

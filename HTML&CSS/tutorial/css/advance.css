@@ -1,0 +1,51 @@
+/* specificity means how many they are specific/unique */
+p { /* global - specificity 1 */
+    /* color: blue; */
+    font-size: var(--p-font-size);
+}
+div p { /* local - specificity 2 */
+    color: red;
+}
+#p-tag {
+    color: aquamarine;
+}
+
+/* Css Variable */
+html {
+    --bgcolor: green; /* setting varibale */
+    --bgdiv: lightblue;
+    --standard-font-size: 20px;
+    --h1-font-size: cal(var(--standard-font-size) * 2); /* space is maditory before and after operator*/
+    --p-font-size: cal(var(--standard-font-size) * 1.5);
+    --clr: black;
+}
+body {
+    --bgcolor: green; /* variable */
+    /* background-color: var(--bgcolor); */
+}
+#somediv p {
+    --bgdiv: lightblue;
+    background-color: var(--bgdiv);
+    color: var(--clr);
+}
+h1 {
+    font-size: var(--h1-font-size);
+}
+/* #banner {
+    display: none;
+} */
+/* both sublings */
+/* input:focus + #banner { 
+    display: block;
+} */
+
+ul li:nth-child(2n-1){
+    background-color: black;
+    color: white;
+}
+
+/* : = pseudo selector
+    :: = pseudo element */
+#banner:hover::before {
+    text-transform: lowercase;
+}

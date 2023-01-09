@@ -1,0 +1,10 @@
+{
+	"employee": [ // square brackets hold arrays
+		{
+			"firstname": "vikash", // data seperated by comma
+			"lastname": "mask", // data is in name/value pairs
+			"age": 24,
+			"profession": "webdeveloper"
+		} // json object ssurrounded by curly braces {}
+	] 
+}

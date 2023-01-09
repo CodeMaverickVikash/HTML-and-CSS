@@ -1,0 +1,115 @@
+<!-- Events & Event Object In JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading" class="me"> Welcome to Code With Vikash</h1>
+        <div id="myfirst" class="child red good" id="first">child 1
+
+            <ul class="this">
+                <li class="childul">this</li>
+                <li class="childul">is</li>
+                <li class="childul">a</li>
+                <li class="childul">list </li>
+                <li class="childul">of my dreams</li>
+            </ul>
+        </div>
+        <div class="child">child 2</div>
+        <div class="child red">child 3</div>
+        <div class="child">child 4</div>
+        <form action="none.html" method="post">
+            <a href="/">Go to Code With Vikash</a>
+            <br>
+            <br>
+            Search this website: <input type="text" name="Hello" id="">
+            <input type="button" id="btn" value="submit">
+        </form>
+    </div>
+    <br>
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+</body>
+
+
+<script>
+    document.getElementById("heading").addEventListener("click", function (e) {
+        console.log(e);
+        // console.log("You have clicked the heading");
+        let variable;
+        // variable = e.target;
+        // variable = e.target.className;
+        // variable = Array.from(e.target.classList);
+
+        // variable = e.target.id;
+        // variable = e.offsetX;
+        // variable = e.offsetY;
+        // variable = e.clientX;
+        // variable = e.clientY;
+        console.log(variable);
+        // location.href = '//codewithharry.com'
+    });
+
+
+    // More on JavaScript Events
+    // let btn = document.getElementById('btn');
+    // btn.addEventListener('click', func1);
+    // btn.addEventListener('dblclick', func2);
+    // btn.addEventListener('mousedown', func3);
+
+    // function func1(e) {
+    //     console.log("Thanks", e);
+    //     e.preventDefault(); // it prevent from going another page
+    // }
+
+    // function func2(e) {
+    //     console.log("Thanks its a double click", e);
+    //     e.preventDefault();
+    // }
+
+    // function func3(e) {
+    //     console.log("Thanks its a mouse down ", e);
+    //     e.preventDefault();
+    // }
+
+    // document.querySelector('.no').addEventListener('mouseenter', function(){
+    //     console.log('You entered no')
+    // })
+
+    // document.querySelector('.no').addEventListener('mouseleave', function(){
+    //     console.log('You exited no')
+    // })
+
+    // document.querySelector('.container').addEventListener('mousemove', function (e) {
+    //     console.log(e.offsetX, e.offsetY);
+    //     document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetX},154)`;
+    //     console.log('You triggered mouse move event')
+    // })
+
+
+    // Smart Page Crawler In JS
+    // let str = "python";
+    // let links = document.links;
+    // // console.log(links);
+    // let href;
+    // Array.from(links).forEach(function (element) {
+    //     href = element.href;
+    //     if (href.includes(str)) {
+    //         console.log(href);
+    //     }
+    //     else{
+    //         console.log("hum");
+    //     }
+    // });
+
+</script>
+
+</html>

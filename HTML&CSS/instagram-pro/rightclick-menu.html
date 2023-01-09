@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right click menu</title>
+    <style>
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.158);
+            border: .2px solid rgba(0, 0, 0, 0.199);
+            box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.158);
+            border-radius: 12px;
+        }
+    
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+    
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            /* border: 1px solid black; */
+        }
+    
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        .context-menu ul li:hover {
+            background: rgba(169, 169, 169, 0.26);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hi, We are creating a custom context menu here.</h1>
+
+    <!-- Custom right click menu -->
+    <div id="custom-menu" class="context-menu" style="display: none;">
+        <ul>
+            <li><a href="#">element-1</a></li>
+            <li><a href="#">element-2</a></li>
+            <li><a href="#">element-3</a></li>
+            <li><a href="#">element-4</a></li>
+            <li><a href="#">element-5</a></li>
+        </ul>
+    </div>
+
+
+    <script type="text/javascript">
+        document.oncontextmenu = rightClickFunc;
+        document.onclick = hidemenu;
+
+        let customMenu = document.getElementById('custom-menu');
+
+        function hidemenu(cEvent) {
+            customMenu.style.display = 'none';
+        }
+
+        function rightClickFunc(e) {
+            e.preventDefault(); // defualt right click menu is blocked now
+
+            if(customMenu.style.display == 'block') {
+                hidemenu();
+            } else {
+                customMenu.style.display = "block";
+                customMenu.style.left = e.pageX + "px";
+                customMenu.style.top = e.pageY + "px";
+            }
+        }
+    </script>
+</body>
+</html>

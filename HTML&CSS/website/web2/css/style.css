@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+html {
+    --font-h: 2.1vw;
+    --font-a: 1.3vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(48, 38, 38);
+    width: 100vw;
+    height: 8vh;
+}
+
+.logo {
+    /* padding-left: 27px; */
+}
+
+.logo a {
+    font-size: var(--font-h);
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .button a {
+    padding: 1vh;
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: white;
+    border: 0.2px solid white;
+}
+
+.navbar .button a:hover {
+    background-color: blueviolet;
+    border: 0;
+}
+
+.login {
+    margin-left: 2vw;
+}
+
+.menu {
+    padding-left: 40%;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 2vw;
+    font-size: var(--font-a);
+    color: white;
+}
+
+.menu li a:hover {
+    color: blueviolet;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    text-align: center;
+    align-items: center;
+    width: 17vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgb(226, 232, 236);
+}
+
+.sidebar li {
+    list-style: none;
+}
+.sidebar li a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: black;
+    line-height: 4vh;
+}
+
+.sidebar li a:hover {
+    background-color: aquamarine;
+    padding: 8px;
+}
+
+/* width */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .sidebar::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+.containerCenter {
+    width: 66vw;
+    /* margin: auto; */
+    border-right: 0.5px solid rgb(233, 220, 220);
+    padding: 35px;
+} 
+
+.containerCenter h1 {
+    font-size: 2vw;
+}
+
+.containerCenter p {
+    font-size: 1.1vw;
+}
+
+footer {
+    background-color: rgb(48, 38, 38);
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+}

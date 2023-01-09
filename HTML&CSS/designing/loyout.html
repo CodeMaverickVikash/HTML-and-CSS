@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            background-color: aqua;
+            width: 100%;
+            height: 700px;
+            display: grid;
+            grid-template-columns: 25% minmax(25%, 50%) 25%;
+        }
+        .left{
+            background-color: blue;
+        }
+        .center{
+            background-color: pink;
+        }
+        .right{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="left">left div 1</div>
+        <div class="center">center div 2</div>
+        <div class="right">right div 3</div>
+    </main>
+    <!-- <iframe src="#" frameborder="0">iframe</iframe> -->
+</body>
+</html>
