@@ -1,4 +1,0 @@
-Insert Records into table
-Fetch Records from table
-Delete Records from table
-Update Records into table
