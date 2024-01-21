@@ -1,0 +1,48 @@
+// we call as sass in css and scss in css3
+
+@import "mixin";
+@import "var";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+    Advantages of sass/scss
+    1) we can use operator
+    2) we can use variables like php syntax
+    3) nesting
+    4) Mixin and parameters
+    5) partials
+*/
+
+.header {
+  @include flexprob(); // includeing mixin
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color;
+
+  h1 {
+    color: red;
+    font-size: 5rem + 5rem;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  p {
+    color: aquamarine;
+    font-size: 5rem;
+
+    &:hover {
+      color: rgb(13, 48, 59);
+    }
+  }
+}

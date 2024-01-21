@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Right click menu</title>
+    <link rel="stylesheet" href="./css/right-click.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">
+      Hi, We have created a custom context menu here.
+    </h1>
+
+    <!-- Custom right click menu -->
+    <div id="custom-menu" class="context-menu">
+      <ul>
+        <li><a href="#">element-1</a></li>
+        <li><a href="#">element-2</a></li>
+        <li><a href="#">element-3</a></li>
+        <li><a href="#">element-4</a></li>
+        <li><a href="#">element-5</a></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      let customMenu = document.getElementById("custom-menu");
+
+      document.addEventListener("contextmenu", rightClickFunc);
+      document.addEventListener("click", hidemenu);
+
+      function hidemenu(cEvent) {
+        customMenu.style.display = "none";
+      }
+
+      function rightClickFunc(e) {
+        e.preventDefault(); // defualt right click menu is blocked now
+
+        if (customMenu.style.display == "block") {
+          hidemenu();
+        } else {
+          customMenu.style.display = "block";
+          customMenu.style.left = e.pageX + "px";
+          customMenu.style.top = e.pageY + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
