@@ -1,106 +1,101 @@
 /* Fonts In CSS */
-/*p{
-    font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
-    /*font-size: 33px;*/  /*1/96th of an inch */
-    /*line-height: 1.3em; */
-/*}*/
-
-span{
-    font-weight: bold;
-    font-style: italic;
+span {
+  font-weight: bold;
+  font-style: italic;
+  /* font-size: 33px;
+    line-height: 1.3rem; */
 }
 
-/* Colors In CSS */
-#firstPara{
-    color:blueviolet; /* Color by name */
+/* Colors In CSS - you can choose colors by name, rgb values or by hexa values */
+#firstPara {
+  color: blueviolet; /* Color by name */
 }
 
-#secondPara{
-    color: rgb(223, 130, 54); /* Color by rgb value */
+#secondPara {
+  color: rgb(223, 130, 54); /* Color by rgb value */
 }
 
-#thirdPara{
-    color: white;
-    background-color: #ff4532; /* Color by hex value */
+#thirdPara {
+  color: white;
+  background-color: #ff4532; /* Color by hex value */
 }
 
 /* Borders and Backgrounds  */
-#firstPara1{
-    background-color: red;
-    height: 100px;
-    width:455px;
-    border: 4px solid green;
-    /* border-width: 4px;
+#firstPara1 {
+  background-color: red;
+  height: 100px;
+  width: 455px;
+  border: 4px solid green;
+  /* border-width: 4px;
     border-color: green;
     border-style: solid;  */
-    border-radius: 11px;
+  border-radius: 11px;
 }
 
-#secondPara2{
-    background-color: rgb(58, 243, 98);
-    height: 100px;
-    width:455px; 
-    border-top: 2px solid rgb(231, 22, 231);
-    border-right: 2px solid rgb(18, 10, 133);
-    border-bottom: 2px solid rgba(9, 144, 27, 0.774);
-    border-left: 2px solid rgb(156, 42, 13);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 14px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 24px;
+#secondPara2 {
+  background-color: rgb(58, 243, 98);
+  height: 100px;
+  width: 455px;
+  border-top: 2px solid rgb(231, 22, 231);
+  border-right: 2px solid rgb(18, 10, 133);
+  border-bottom: 2px solid rgba(9, 144, 27, 0.774);
+  border-left: 2px solid rgb(156, 42, 13);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 24px;
 }
 
-#thirdPara3{
-    height: 500px;
-    width:455px; 
-    background-image: url('C://Users//VIKASH//Desktop//HTML and CSS//images//image1.jpg');
-    border: 2px solid red;
-    background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x and y axis */
-    /* background-position: 192px 34px; */
-    background-position: center center;
-    /* background-position: bottom right; */
-    /* background-position: top center; */ 
-
+#thirdPara3 {
+  height: 500px;
+  width: 455px;
+  background-image: url("C://Users//VIKASH//Desktop//HTML and CSS//images//image1.jpg");
+  border: 2px solid red;
+  background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x and y axis */
+  /* background-position: 192px 34px; */
+  background-position: center center;
+  /* background-position: bottom right; */
+  /* background-position: top center; */
 }
 
-/* CSS Box Model, Margin and Padding (Important) */
+/* CSS Box Model, Margin and Padding (Important)
+    
+The Box Model in CSS is a fundamental concept that describes how elements are structured and sized on a webpage. It consists of four main components: content, padding, border, and margin. 
+*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #e6cbf8;
+body {
+  background-color: #e6cbf8;
 }
 
-.container{
-    background-color: rgb(231, 230, 241);
-    border: 3px solid rgb(64, 6, 119);
+.container {
+  background-color: rgb(231, 230, 241);
+  border: 3px solid rgb(64, 6, 119);
 
-    /* We can set margin/padding for  top, bottom, left and right like this */
-    /* padding-top: 79px;
+  /* We can set margin/padding for  top, bottom, left and right like this */
+  /* padding-top: 79px;
     padding-bottom: 79px;
     padding-left: 34px; 
     padding-right: 79px;*/
 
-    /* margin-top: 3px;
+  /* margin-top: 3px;
     margin-bottom: 5px;
     margin-left: 34px;
     margin-right:5px ; */
 
-    /* margin = top right bottom left;  */
-    /* padding = top right bottom left;  */
+  /* margin = top right bottom left;  */
+  /* padding = top right bottom left;  */
 
-    /* padding: 23px 56px 6px 78px;   */
-    /* margin: 23px 56px 6px 78px;   */
+  /* padding: 23px 56px 6px 78px;   */
+  /* margin: 23px 56px 6px 78px;   */
 
-    /* padding: y(top/bottom) x(left/right); */
-    /* margin: y(top/bottom) x(left/right); */
-    padding: 34px 19px;
-    margin: 14px 19px;
-    border-radius: 23px;
-    width: 533px;
-    
-
-    
+  /* padding: y(top/bottom) x(left/right); */
+  /* margin: y(top/bottom) x(left/right); */
+  padding: 34px 19px;
+  margin: 14px 19px;
+  border-radius: 23px;
+  width: 533px;
 }
