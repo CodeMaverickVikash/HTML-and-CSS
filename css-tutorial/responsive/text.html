@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive text</title>
+    <style>
+        html {
+            font-size: 100%; /* Default 16px */
+
+            /* 
+                16px == 100%
+                1px == 6.25%
+            */
+        }
+
+        .holder {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Only for mobile device */
+        @media (max-width: 450px) {
+            html {
+                font-size: 81.2%; /* 13px */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="holder">
+        <h3>Hello responsive text</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse exercitationem fugit consequatur quasi est
+            aut? Molestias, libero rerum error omnis quae quo velit illum tenetur itaque? Ullam, neque ipsam? Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam quos porro possimus aliquam consequatur
+            culpa quidem sequi ratione et officia, nostrum laudantium libero nesciunt at. Aliquid amet reiciendis optio!
+        </p>
+
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ea dolorem voluptatibus illum
+            perferendis, neque facilis maxime tempora quis autem at libero dolorum velit. Fugiat illum animi rerum
+            aspernatur eius!</span>
+    </div>
+</body>
+
+</html>
